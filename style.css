@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: inherit;
+}
+
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3333;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 120px;
+  height: 120px;
+  margin: -60px 0 0 -60px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #503131;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  z-index: 3334;
+}
+
+#loader:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #20550F;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #36912B;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0%   {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0%   {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #EFECEC;
+  z-index: 3333;
+}
+
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -transform: translateX(-100%);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -transform: translateX(100%);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.loaded #loader-wrapper {
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -transform: translateY(-100%);
+  -webkit-transition: all 0.3s 1s ease-out;
+  transition: all 0.3s 1s ease-out;
+}
+
+.progress-container {
+  width: 100%;
+  height: 3px;
+  background: transparent;
+  margin-bottom: 5px;
+
+}
+
+.progress-bar {
+  height: 3px;
+  background: #EFECEC;
+  width: 0%;
+}
+
+.intro {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(50, 50, 50, 0.5)), url('http://escapebrooklyn.com/wp-content/uploads/2017/09/NST3130.jpg') no-repeat;
+  display: table;
+  background-size: cover;
+}
+
+.intro .inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+.content {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h1 {
+  font-family: 'Muli', sans-serif;
+  color: #EFECEC;
+  text-shadow: 0px 0px 300 #000;
+  font-size: 100px;
+  margin-bottom: 5px;
+}
+
+.content h2{
+  padding-top: 0px;
+  font-family: 'Raleway', sans-serif;
+  color: #EFECEC;
+  text-shadow: 0px 0px 300 #000;
+  font-size: 135%;
+  text-transform: lowercase;
+  text-decoration: none;
+  margin-top: auto;
+  margin-bottom: 100px;
+}
+
+
+.btn {
+  display: block;
+  width: 200px;
+  padding: 10px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #EFECEC;
+  background: rgba(0,0,0,0.3);
+  font-size: : 135%;
+  letter-spacing: 1px;
+  border: solid #EFECEC;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: rgba(239, 236, 236, 0.8);
+  color: #000;
+  transition: 0.2s;
+}
+
+.text {
+  display: table-cell;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+  line-height: 1.25;
+  vertical-align: middle;
+  font-family: 'Montserrat', sans-serif;
+  color: #EFECEC;
+}
+
+.paragraph {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 1)), url('fieldbackground.jpg') no-repeat;
+  display: table;
+  background-size: cover;
+}
+
+.howItWorks {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 1)), url('hillbackground.jpg') no-repeat;
+  display: table;
+  background-size: cover;
+}
+
+.contact-container {
+    margin: auto;
+    height: 90%;
+    width: 100%;
+    display: table;
+    text-align: center;
+    background: #EFECEC;
+    font-family: 'Montserrat';
+}
+
+.contact-title {
+    margin-top: 32px;
+    color: #36912B;
+    -webkit-transition-timing-function: ease-in-out;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+form {
+    margin: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #36912B;
+    font-size: 18px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Muli';
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    width: 400px;
+    background: #36912B;
+    border-color: transparent;
+    border-radius: 5px;
+    color: #EFECEC;
+    font-size: 20px;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+
+}
+
+.fa {
+  padding: 5px;
+}
+
+.foot {
+  text-align: center;
+  padding: 2%;
+  font-family: 'Raleway', sans-serif;
+  background-color: #FFFDF6;
+}
