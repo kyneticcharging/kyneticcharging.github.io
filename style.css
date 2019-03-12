@@ -163,7 +163,7 @@ header {
   height: 100%;
   width: 100%;
   margin: auto;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(50, 50, 50, 0.5)), url('http://escapebrooklyn.com/wp-content/uploads/2017/09/NST3130.jpg') no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(50, 50, 50, 0.5)), url('chargingcar.jpg') no-repeat;
   display: table;
   background-size: cover;
 }
@@ -240,7 +240,7 @@ header {
   height: 100%;
   width: 100%;
   margin: auto;
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 1)), url('fieldbackground.jpg') no-repeat;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 1)), url('electriccarblue.jpg') no-repeat;
   display: table;
   background-size: cover;
 }
@@ -249,7 +249,7 @@ header {
   height: 100%;
   width: 100%;
   margin: auto;
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 1)), url('hillbackground.jpg') no-repeat;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 1)), url('blacktesla.jpg') no-repeat;
   display: table;
   background-size: cover;
 }
